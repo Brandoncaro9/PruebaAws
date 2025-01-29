@@ -1,8 +1,7 @@
 var express = require('express')
 var app = express()
 var path = require('path')
-require (.config());
-
+require('dotenv').config();
 
 app.get('/estado', function(request, response) {
     response.json({ mensaje: "Hola  mundo" })
@@ -17,7 +16,9 @@ app.get('/*', function(req, res, next) {
 
 
 
-var puerto = 3000;
+var puerto = process.env.port || 3000;
+
+app.listen(puerto, () => console.log('servidor funcionando por el puerto ' + puerto))0;
 
 app.listen(puerto, () => console.log('servidor funcionando por el puerto ' + puerto))
 

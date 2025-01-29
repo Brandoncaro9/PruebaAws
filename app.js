@@ -1,7 +1,7 @@
 var express = require('express')
 var app = express()
 var path = require('path')
-require().config;
+require .config;
 
 app.get('/estado', function(request, response) {
     response.json({ mensaje: "Hola  mundo" })

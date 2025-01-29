@@ -75,7 +75,6 @@ app.use(cors({
 
 app.use("/",express.static(__dirname + "/Pagina"))
 
-<h2> Hola mundo <h2>
 
 app.listen(config.puerto,function(){
     console.log("servidor funcionando por el puerto" + config.puerto)

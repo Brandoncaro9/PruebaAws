@@ -18,10 +18,6 @@ app.get('/*', function(req, res, next) {
 
 var puerto = process.env.port || 3000;
 
-app.listen(puerto, () => console.log('servidor funcionando por el puerto ' + puerto))0;
-
-app.listen(puerto, () => console.log('servidor funcionando por el puerto ' + puerto))
-
 
 
 app.listen(config.puerto,function(){

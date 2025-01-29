@@ -18,7 +18,7 @@ config.expiracion = 3000000
 config.blacklist = [
     "http://localhost:4200",
     "http://localhost:9876"
-    "http://localhost:3000"
+
 ]
 
 module.exports.config = config
